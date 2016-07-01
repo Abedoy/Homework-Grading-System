@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="100.0" prefWidth="950.0" xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx/2.2" fx:controller="edu.csustan.gradingsystem.view.Header">
+  <children>
+    <Button fx:id="logout" layoutX="849.0" layoutY="14.0" mnemonicParsing="false" onAction="#logout" text="Log Out" />
+    <Label layoutX="27.0" layoutY="14.0" styleClass="title" text="Grading ">
+      <font>
+        <Font size="31.0" fx:id="x1" />
+      </font>
+      <textFill>
+        <Color blue="0.750" green="0.750" red="0.750" fx:id="x2" />
+      </textFill>
+    </Label>
+    <Label font="$x1" layoutX="72.0" layoutY="46.0" styleClass="title" text="System" textFill="$x2" />
+    <Label layoutX="195.0" layoutY="64.0" text="1.0" textFill="#bfbfbf">
+      <font>
+        <Font size="20.0" />
+      </font>
+    </Label>
+  </children>
+</AnchorPane>

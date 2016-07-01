@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="249.0" prefWidth="149.0" xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx/2.2" fx:controller="edu.csustan.gradingsystem.view.SideMenu">
+  <children>
+    <MenuButton focusTraversable="true" layoutX="4.0" layoutY="6.0" mnemonicParsing="false" popupSide="RIGHT" prefHeight="48.0" prefWidth="140.0" style="" text="Courses" visible="true">
+      <items>
+        <MenuItem mnemonicParsing="false" text="CS4100" />
+        <MenuItem mnemonicParsing="false" text="CS3100" />
+      </items>
+    </MenuButton>
+    <MenuButton focusTraversable="true" layoutX="4.0" layoutY="55.0" mnemonicParsing="false" popupSide="RIGHT" prefHeight="47.0" prefWidth="140.0" style="" text="Assignments" visible="true">
+      <items>
+        <MenuItem mnemonicParsing="false" onAction="#HelloWorld" text="Hello World" fx:id="helloworld" />
+        <MenuItem mnemonicParsing="false" text="Grading System" />
+      </items>
+    </MenuButton>
+    <MenuButton focusTraversable="true" layoutX="4.0" layoutY="103.0" mnemonicParsing="false" popupSide="RIGHT" prefHeight="47.0" prefWidth="140.0" text="Students" visible="true">
+      <items>
+        <MenuItem mnemonicParsing="false" text="Add Student" />
+        <MenuItem mnemonicParsing="false" text="Edit Student" />
+      </items>
+    </MenuButton>
+    <MenuButton focusTraversable="true" layoutX="4.0" layoutY="151.0" mnemonicParsing="false" popupSide="RIGHT" prefHeight="47.0" prefWidth="140.0" style="" text="Reminders" textFill="BLACK" visible="true" />
+    <MenuButton alignment="CENTER_LEFT" focusTraversable="true" layoutX="4.0" layoutY="199.0" mnemonicParsing="false" popupSide="RIGHT" prefHeight="47.0" prefWidth="140.0" style="" text="Settings" textFill="BLACK" visible="true" wrapText="true" />
+  </children>
+</AnchorPane>

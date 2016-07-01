@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="672.0" prefWidth="900.0" styleClass="background" xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx/2.2" fx:controller="edu.csustan.gradingsystem.view.Feedback">
+  <children>
+    <TextField fx:id="studentName" layoutX="439.0" layoutY="183.0" onMouseClicked="#Name" prefHeight="24.0" prefWidth="200.0" text="" />
+    <Label id="student_email" layoutX="332.0" layoutY="224.0" text="Student Email" />
+    <TextField fx:id="studentEmail" layoutX="440.0" layoutY="219.0" onMouseClicked="#Email" prefHeight="24.0" prefWidth="200.0" text="" />
+    <Button layoutX="329.0" layoutY="584.0" mnemonicParsing="false" onAction="#uploadButtonAction" prefHeight="24.0" prefWidth="100.0" text="Attach File" />
+    <Button fx:id="button" blendMode="SRC_OVER" layoutX="715.0" layoutY="587.0" onAction="#submitButtonAction" prefHeight="31.0" prefWidth="128.0" text="Send Feedback" />
+    <TextArea fx:id="testMessage" layoutX="329.0" layoutY="346.0" onMouseClicked="#Message" prefHeight="228.0" prefWidth="518.0" text="" wrapText="true" />
+    <Label id="subject" layoutX="332.0" layoutY="299.0" text="Subject" />
+    <TextField fx:id="sub" layoutX="409.0" layoutY="298.0" onMouseClicked="#Subject" prefWidth="437.0" text="" />
+    <Label layoutX="332.0" layoutY="186.0" style="text-shadow: 1px 1px 1px;" text="Student Name" />
+    <Label id="assign" layoutX="332.0" layoutY="260.0" text="Assignment" />
+    <TextField fx:id="assign" layoutX="440.0" layoutY="256.0" onMouseClicked="#Assignment" prefHeight="24.0" prefWidth="200.0" text="" />
+    <Label layoutX="302.0" layoutY="135.0" prefHeight="40.0" prefWidth="353.0" styleClass="title" text="Homework Feedback Form">
+      <font>
+        <Font name="System Bold Italic" size="18.0" />
+      </font>
+    </Label>
+    <fx:include source="Header.fxml" layoutX="29.0" layoutY="14.0" prefHeight="100.0" prefWidth="842.0" />
+    <fx:include source="SideMenu.fxml" prefHeight="236.0" prefWidth="185.0" AnchorPane.bottomAnchor="238.0" AnchorPane.leftAnchor="56.0" AnchorPane.rightAnchor="659.0" AnchorPane.topAnchor="198.0" />
+  </children>
+
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="950.0" styleClass="background" xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx/2.2" fx:controller="edu.csustan.gradingsystem.view.Login">
+  <children>
+    <StackPane layoutY="174.0" prefHeight="303.0" prefWidth="385.0" style="" styleClass="background" AnchorPane.leftAnchor="280.0" AnchorPane.rightAnchor="285.0" />
+    <Button id="button" fx:id="login" layoutX="516.0" layoutY="408.0" onAction="#login" prefHeight="37.0" prefWidth="120.0" styleClass="login-button" text="Login" />
+    <TextField fx:id="username" layoutX="309.0" layoutY="245.0" prefHeight="46.0" prefWidth="333.0" />
+    <Text layoutX="311.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name">
+      <fill>
+        <Color blue="0.625" green="0.625" red="0.625" fx:id="x2" />
+      </fill>
+      <font>
+        <Font size="15.0" fx:id="x1" />
+      </font>
+    </Text>
+    <Text fill="$x2" font="$x1" layoutX="311.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+    <PasswordField fx:id="password" layoutX="311.0" layoutY="331.0" prefHeight="46.0" prefWidth="329.0" />
+    <Label fx:id="message" layoutX="234.0" layoutY="535.0" prefWidth="333.0" text="" />
+  </children>
+
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.csustan.gradingsystem.controller.StudentSubmissionController">
+  <children>
+    <HBox layoutX="316.0" layoutY="232.0" prefHeight="24.0" prefWidth="315.0" />
+    <Label layoutX="325.0" layoutY="238.0" style="text-shadow: 1px 1px 1px;" text="Student Name" />
+    <TextField fx:id="studentName" layoutX="421.0" layoutY="235.0" prefWidth="335.0" text="" />
+    <HBox layoutX="316.0" layoutY="267.0" prefHeight="24.0" prefWidth="315.0" />
+    <Label id="student_email" layoutX="323.0" layoutY="271.0" prefWidth="89.0" text="Student Email" />
+    <TextField fx:id="studentEmail" layoutX="421.0" layoutY="268.0" prefWidth="335.0" text="" />
+    <Button fx:id="addAssignmentButton" layoutX="774.0" layoutY="379.0" mnemonicParsing="false" onAction="#addAssignmentButton" prefWidth="112.0" text="Add" />
+    <Button id="button" blendMode="SRC_OVER" layoutX="774.0" layoutY="421.0" onAction="#removeButton" prefHeight="24.0" text="Remove" />
+    <Label layoutX="316.0" layoutY="156.0" prefHeight="40.0" prefWidth="253.0" text="Student Submission">
+      <font>
+        <Font name="System Bold Italic" size="18.0" />
+      </font>
+    </Label>
+    <Label id="subject" layoutX="324.0" layoutY="345.0" text="Subject" />
+    <TextField fx:id="subj" layoutX="384.0" layoutY="340.0" prefWidth="372.0" text="" />
+    <HBox layoutX="324.0" layoutY="299.0" prefHeight="24.0" prefWidth="315.0" />
+    <Label id="assign" layoutX="323.0" layoutY="305.0" text="Assignment" />
+    <TextField fx:id="assign" layoutX="421.0" layoutY="301.0" prefWidth="334.9999000000025" text="" />
+    <HBox layoutX="324.0" layoutY="338.0" prefHeight="24.0" prefWidth="46.0" />
+    <Button layoutX="774.0" layoutY="558.0" mnemonicParsing="false" onAction="#uploadButton" text="Submit" />
+    <ScrollPane layoutX="324.0" layoutY="378.0" prefHeight="200.0" prefWidth="441.0">
+      <content>
+        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="262.0">
+          <children>
+            <ListView layoutX="0.0" layoutY="0.0" prefHeight="200.0" prefWidth="426.0" />
+          </children>
+        </AnchorPane>
+      </content>
+    </ScrollPane>
+    <fx:include layoutX="-1.0" layoutY="0.0" source="Header.fxml" />
+    <fx:include layoutX="72.0" layoutY="203.0" source="SideMenu.fxml" />
+  </children>
+</AnchorPane>

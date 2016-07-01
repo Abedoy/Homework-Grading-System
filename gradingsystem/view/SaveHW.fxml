@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="272.0" prefWidth="378.0" styleClass="background" xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx/2.2" fx:controller="edu.csustan.gradingsystem.view.SaveHW">
+  <children>
+    <RadioButton layoutX="32.0" layoutY="149.0" mnemonicParsing="false" text="Open with">
+      <textFill>
+        <Color blue="0.625" green="0.625" red="0.625" fx:id="x1" />
+      </textFill>
+    </RadioButton>
+    <RadioButton layoutX="32.0" layoutY="174.0" mnemonicParsing="false" text="Save File" textFill="$x1" />
+    <MenuButton layoutX="152.0" layoutY="149.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="186.0" text="Notepad">
+      <items>
+        <MenuItem mnemonicParsing="false" text="Notepad++" />
+        <MenuItem mnemonicParsing="false" text="Other..." />
+      </items>
+    </MenuButton>
+    <CheckBox layoutX="11.0" layoutY="208.0" mnemonicParsing="false" text="Do this automatically for files like these from now on" textFill="$x1" />
+    <Button layoutX="209.0" layoutY="237.0" mnemonicParsing="false" prefWidth="56.0" text="OK" />
+    <Button layoutX="282.0" layoutY="237.0" mnemonicParsing="false" text="Cancel" />
+    <Text fill="$x1" layoutX="32.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="What should Firefox do with this file?" />
+    <Text fill="$x1" layoutX="47.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="which is: Text Document (130 bytes)" />
+    <Text fill="$x1" layoutX="47.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="from:http://cs.csustan.edu" />
+    <Text fill="$x1" layoutX="47.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HelloWorld.java">
+      <font>
+        <Font name="System Bold" size="12.0" />
+      </font>
+    </Text>
+    <Text fill="$x1" layoutX="21.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have chosen to open:" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dfdfdf" height="15.000091552734375" layoutX="32.0" layoutY="51.0" stroke="BLACK" strokeType="INSIDE" width="12.0" />
+  </children>
+
+</AnchorPane>

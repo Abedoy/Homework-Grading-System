@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="950.0" styleClass="background" xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx/2.2" fx:controller="edu.csustan.gradingsystem.view.Landing">
+  <children>
+    <Text fill="#bfbfbf" layoutX="291.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recently Submitted Assignments">
+      <font>
+        <Font size="18.0" fx:id="x1" />
+      </font>
+    </Text>
+    <TableView layoutX="292.0" layoutY="352.0" prefHeight="200.0" prefWidth="585.0">
+      <columns>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="102.0" style="" text="Course" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="117.0" text="Assignment" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="150.0" text="Student Name" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="107.0" text="Date Submitted" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="107.0" text="Feedback" />
+      </columns>
+    </TableView>
+    <ListView layoutX="292.0" layoutY="376.0" prefHeight="228.0" prefWidth="585.0" />
+    <Text fill="#9f9f9f" font="$x1" layoutX="292.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reminders" />
+    <TextArea layoutX="292.0" layoutY="186.0" prefHeight="93.0" prefWidth="377.0" wrapText="true" />
+    <Button layoutX="735.0" layoutY="192.0" mnemonicParsing="false" prefWidth="113.0" text="Add Assignment" />
+    <Button layoutX="735.0" layoutY="225.0" mnemonicParsing="false" prefWidth="113.0" text="Add Student" />
+    <Button layoutX="735.0" layoutY="258.0" mnemonicParsing="false" prefWidth="113.0001220703125" text="Add Course" />
+    <fx:include source="Header.fxml" layoutX="0.0" layoutY="0.0" prefHeight="88.0" prefWidth="950.0" />
+    <fx:include source="SideMenu.fxml" layoutX="75.0" layoutY="186.0" />
+  </children>
+</AnchorPane>

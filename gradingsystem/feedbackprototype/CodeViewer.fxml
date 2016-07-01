@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="960.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="feedbackprototype.CodeViewerController">
+  <children>
+    <Button fx:id="button" layoutX="835.0" layoutY="565.0" onAction="#handleButtonAction" text="Submit Feedback" />
+    <Label fx:id="label" layoutX="126.0" layoutY="120.0" minHeight="16.0" minWidth="69.0" />
+    <Button fx:id="downloadButton" layoutX="749.0" layoutY="565.0" onAction="#handledownloadButtonAction" text="Download" />
+    <TextArea editable="false" layoutX="422.0" layoutY="73.0" prefHeight="75.0" prefWidth="524.0" wrapText="true" />
+    <TabPane layoutX="181.0" layoutY="158.0" prefHeight="396.0" prefWidth="765.0" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab fx:id="tab1ID" text="Source 1">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="169.00009999999747" prefWidth="199.9998779296875">
+              <children>
+                <TextArea fx:id="source1Area" editable="false" layoutX="0.0" layoutY="0.0" prefHeight="374.0" prefWidth="765.0" wrapText="true" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab fx:id="tab2ID" text="Source 2">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <TextArea fx:id="source2Area" editable="false" layoutX="0.0" layoutY="0.0" prefHeight="374.0" prefWidth="667.0" wrapText="true" />
+                <ScrollBar layoutX="655.0" layoutY="0.0" orientation="VERTICAL" prefHeight="374.0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+    <Label layoutX="181.0" layoutY="73.0" text="Student" />
+    <Label layoutX="181.0" layoutY="100.0" prefWidth="62.0" text="Instructor" />
+    <Label layoutX="181.0" layoutY="126.0" text="Assignment" />
+    <Label layoutX="422.0" layoutY="51.0" prefWidth="232.0" text="Compiler Report" />
+    <TextField id="studentName" fx:id="studentID" editable="false" layoutX="258.0" layoutY="70.0" prefWidth="147.0" text="" />
+    <TextField fx:id="instructorName" editable="false" layoutX="258.0" layoutY="97.0" prefWidth="147.0" />
+    <TextField fx:id="assignmentName" editable="false" layoutX="258.0" layoutY="123.0" prefWidth="147.0" />
+  </children>
+</AnchorPane>

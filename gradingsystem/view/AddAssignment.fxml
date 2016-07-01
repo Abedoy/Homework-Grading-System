@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Author  Thomas Falasco 
+     FXML file for Add Assignment -->
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="950.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="edu.csustan.gradingsystem.controller.AddAssignmentController">
+  <children>
+    <Text layoutX="231.0" layoutY="147.0" scaleX="1.0" scaleY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Assignment">
+      <font>
+        <Font name="System Italic" size="24.0" />
+      </font>
+    </Text>
+    <Text layoutX="237.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Assignment Name">
+      <font>
+        <Font size="18.0" fx:id="x1" />
+      </font>
+    </Text>
+    <Text font="$x1" layoutX="237.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Possible Points" />
+    <Text font="$x1" layoutX="242.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Due Date (yyyy-mm-dd)" />
+    <TextArea fx:id="Description" layoutX="237.0" layoutY="345.0" prefHeight="249.0" prefWidth="677.0" wrapText="true" />
+    <ScrollBar fx:id="DescriptionScrollBar" layoutX="902.0" layoutY="345.0" orientation="VERTICAL" prefHeight="249.0" />
+    <TextField fx:id="AssignmentName" layoutX="431.0" layoutY="170.0" onAction="#AssignmentName" prefWidth="200.0" />
+    <TextField fx:id="PossiblePoints" layoutX="431.0" layoutY="216.0" onAction="#PossiblePoints" prefWidth="63.0" />
+    <TextField fx:id="DueDate" layoutX="242.0" layoutY="302.0" onAction="#DueDate" prefWidth="99.966796875" />
+    <Text font="$x1" layoutX="242.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" />
+    <Button fx:id="SubmitAssignment" layoutX="771.0" layoutY="612.0" mnemonicParsing="false" onAction="#SubmitAssignment" text="Submit Assignment" />
+    <Text font="$x1" layoutX="536.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time Due (hh:mm:ss)" />
+    <TextField fx:id="TimeDue" layoutX="536.0" layoutY="302.0" onAction="#TimeDue" prefWidth="99.966796875" />
+    <Text font="$x1" layoutX="748.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Style Points" />
+    <Text font="$x1" layoutX="509.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Functional Points" />
+    <TextField fx:id="StylePoints" layoutX="853.0" layoutY="218.0" onAction="#StylePoints" prefWidth="63.0" />
+    <TextField fx:id="FunctionalPoints" layoutX="666.0" layoutY="217.0" onAction="#FunctionalPoints" prefWidth="63.0" />
+    <fx:include source="Header.fxml" layoutX="0.0" layoutY="0.0" />
+    <fx:include source="SideMenu.fxml" layoutX="27.0" layoutY="177.0" />
+  </children>
+</AnchorPane>
